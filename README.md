@@ -1,4 +1,6 @@
 # FIVEM SCRIPTS
+# the folder name must be exactly (vrp_login)
+# do not rename the folder
 
 **WARNING**
 
