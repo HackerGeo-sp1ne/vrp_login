@@ -1,0 +1,282 @@
+/*
+    FiveM Scripts
+	The Official HackerGeo Script 
+	Credits - HackerGeo
+	Website - www.HackerGeo.com
+	GitHub - GITHUB.com/HackerGeo-sp1ne
+	Steam - SteamCommunity.com/id/HackerGeo1
+	Copyright 2019 ©HackerGeo. All rights served
+]]
+
+------------------------------------------------------WARNING-----------------------------------------------------
+---------------------Do not reupload/re release any part of this script without my permission---------------------
+------------------------------------------------------------------------------------------------------------------
+
+
+
+*/
+.console {
+  background-color: rgba(255,86,60,0.3);
+  width: 500px;
+  min-height: 30px;
+  color: white;
+  position: absolute;
+  top: 5px;
+  left: 200px;
+}
+html {
+  overflow: hidden;
+}
+@font-face {
+  font-family: 'pricedown';
+  src: url(pricedown.ttf);
+}
+.sans {
+  font-family: 'Roboto', sans-serif;
+}
+.saldobox{
+  border-color: 2px solid black;
+  color: gray;
+  font-family: Orator Std;
+  text-align: center;
+  font-size: 13px;
+  top: 0;
+  left: 0;
+  right: 18px;
+  position: relative;
+}
+#username{
+  background-color: rgba(0, 0, 0, 0.527);
+  border: 0px;
+  height: 40px;
+  width: 400px;
+  text-align: center;
+  margin-left: 30px;
+  font-size: 16px;
+  font-family: Bebas;
+}
+#parola{
+  background-color: rgba(0, 0, 0, 0.527);
+  border: 0px;
+  height: 40px;
+  width: 400px;
+  text-align: center;
+  margin-left: 30px;
+  font-size: 16px;
+  font-family: Bebas;
+}
+#parola2{
+  background-color: rgba(0, 0, 0, 0.527);
+  border: 0px;
+  height: 40px;
+  width: 400px;
+  text-align: center;
+  margin-left: 30px;
+  font-size: 16px;
+  font-family: Bebas;
+}
+h1,h2,h3,h4 {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 120;
+  right: 40;
+  width: 400px;
+  height: 400px;
+}
+.full-screen {
+  width: 100%;
+  height:100%;
+  display: flex;
+  
+  align-items: center;
+}
+.login-container {
+  width: 55%;
+  height: 600px;
+  background-color: #1D1E27;
+  
+  border-radius: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  display: none;
+  z-index: 9999999;
+}
+.header {
+  width:100%;
+  height: 100px;
+  background-color: #222332bd;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+.header2 {
+  width:100%;
+  height: 75px;
+  background-color: #2B2C3D;
+  text-align: center;
+}
+#login-form{
+  position: relative;
+  background-color: #16171F;
+  margin-left: 7px;
+  height: 350px;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.2s; /* Safari */
+  transition: opacity 0.2s;
+}
+#login-form:hover{
+  position: relative;
+  background-color: #16171F;
+  margin-left: 7px;
+  height: 350px;
+  opacity: 1;
+  -webkit-transition: opacity 0.2s; /* Safari */
+  transition: opacity 0.2s;
+}
+#register-form{
+  position: relative;
+  background-color: #16171F;
+  margin-left: 7px;
+  height: 350px;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.2s; /* Safari */
+  transition: opacity 0.2s;
+}
+#register-form:hover{
+  position: relative;
+  background-color: #16171F;
+  margin-left: 7px;
+  height: 350px;
+  opacity: 1;
+  -webkit-transition: opacity 0.2s; /* Safari */
+  transition: opacity 0.2s;
+}
+.menucolor{
+  padding-top: 11px;
+  padding-left: 5px;
+  letter-spacing: -1px;
+  text-align: center;
+  background-color: #2B2C3D;
+  width: 98.2%;
+  height: 10%;
+  color: rgb(255, 255, 255, 0.60);
+  font-family: 'Roboto', sans-serif;
+  font-size: 19px;
+  border-bottom: 2px solid rgb(235, 184, 16);
+}
+.header .header-right {
+  color: #777;
+  margin-right: 70px;
+  margin-top: 10px;
+}
+.header-right h3 {
+  float: right;
+  margin-top: 30px;
+}
+.body {
+  width: 100%;
+  height: 600px;
+  display: none;
+}
+.centered {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  left: 30px;
+  width: 91%;
+  height: 460px;
+  margin-left:30px;;
+  
+  margin-right: auto;
+}
+#id{
+  float: right;
+  font-size: 20px;
+}
+.button {
+  flex-grow: 1;
+  align-items: center;
+  height: 40px;
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  width: 185px;
+  background: #101111;
+  border-radius: 1px;
+  color: #ffffff;
+  font-size: 1.1em;
+  padding: 20px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.button:focus, .submit {outline:0;}
+
+.submit:hover{
+  background-color: rgb(245, 245, 245);
+  color: black;
+  -webkit-transition: background-color 0.5s; /* Safari */
+  -webkit-transition: color 0.5s; /* Safari */
+  transition: background-color 0.5s;
+  transition: color 0.5s;
+}
+
+input[type=password], select, textarea {
+  width: 100%;
+  padding: 25px 20px;
+  font-size: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 40px;
+  resize: vertical;
+}input[type=text], select, textarea {
+    width: 100%;
+    padding: 25px 20px;
+    font-size: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 40px;
+    resize: vertical;
+}
+input[type=submit], .submit {
+  height: 60px;
+  text-align: center;
+  width: 91%;
+  margin-left: 30px;
+  background: #1A1B26;
+  border-radius: 1px;
+  color: #ffffff;
+  font-size: 1.1em;
+  padding: 20px 20px 20px 20px;
+  text-decoration: none;
+  border: none;
+  -webkit-transition: background-color 0.2s; /* Safari */
+  transition: background-color 0.2s;
+
+}
+.botaofix{
+  bottom: 0;
+  left: 0;
+  right: 18px;
+  font-size: 15px;
+  position: absolute;
+  padding-bottom: 10px;
+}
+.form {
+  max-width: 74%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
