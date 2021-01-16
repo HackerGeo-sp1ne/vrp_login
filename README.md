@@ -12,7 +12,7 @@ This resource is official by HackerGeo
 
 - Add in `server.cfg` so:
 ```
-start vrp_loading
+start vrp_login
 ```
 
 - Add `tabels.sql` in database
